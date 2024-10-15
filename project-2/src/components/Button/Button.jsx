@@ -1,7 +1,14 @@
-const Button = () => {
+import { MdMessage } from "react-icons/md";
+import styles from "./Button.module.css";
+const Button = (props) => {
+    console.log(props);
     return (
-        <div>Button</div>
-    )
-}
+        <button className={styles.primary_btn}>
 
-export default Button
+            {props.icon}
+            {props.text}
+        </button>
+    );
+};
+
+export default Button;
