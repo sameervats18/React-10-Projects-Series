@@ -20,9 +20,25 @@ const ContactForm = () => {
                     <label htmlFor="name">Name</label>
                     <input type="text" name="name" />
                 </div>
+                <div className={styles.form_control}>
+                    <label htmlFor="email">Email</label>
+                    <input type="email" name="email" />
+                </div>
+                <div className={styles.form_control}>
+                    <label htmlFor="text">Text</label>
+                    <textarea name="text" rows="7" />
+                </div>
+                <div style={{
+                    display: "flex",
+                    justifyContent: "end",
+                }}>
+                    <Button text="SUBMIT" />
+                </div>
             </form>
         </div>
-        <div className={styles.contact_image}></div>
+        <div className={styles.contact_image}>
+            <img src="/images/Service 24_7-pana 1.svg" alt="24x7" />
+        </div>
     </section>;
 };
 
