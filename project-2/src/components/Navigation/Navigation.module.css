@@ -12,3 +12,9 @@
     list-style-type: none;
     font-weight: 500;
 }
+
+.navigation img {
+    width: 130px;
+    height: 130px;
+    margin-top: 35px;
+}

@@ -3,8 +3,23 @@ import styles from "./ContactForm.module.css";
 import { MdMessage } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
+import { useState } from "react";
 
 const ContactForm = () => {
+
+    const [name, setName] = useState(" Sameer ");
+    const [email, setEmail] = useState(" sam@gmail.com ");
+    const [text, setText] = useState(" Let'sGo ");
+
+
+    const onSubmit = (event) => {
+        event.preventDefault();
+
+        setName(event.target[0].value);
+        setEmail(event.target[1].value);
+        setText(event.target[2].value);
+
+    }
 
     const onViaCallSubmit = () => {
         console.log("I am from call");
@@ -20,7 +35,7 @@ const ContactForm = () => {
                 isOutline={true}
                 text="VIA EMAIL FORM" icon={<HiMail fontSize="24px" />} />
 
-            <form>
+            <form onSubmit={onSubmit}>
                 <div className={styles.form_control}>
                     <label htmlFor="name">Name</label>
                     <input type="text" name="name" />
@@ -39,6 +54,7 @@ const ContactForm = () => {
                 }}>
                     <Button text="SUBMIT" />
                 </div>
+                <div>{name + " " + email + " " + text}</div>
             </form>
         </div>
         <div className={styles.contact_image}>
