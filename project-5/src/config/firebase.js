@@ -6,12 +6,12 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCw4a_6ouJbvqXnYHuWzDyxtRvFLtwHsS8",
-    authDomain: "vite-contact.firebaseapp.com",
-    projectId: "vite-contact",
-    storageBucket: "vite-contact.appspot.com",
-    messagingSenderId: "697891519095",
-    appId: "1:697891519095:web:ba17a86d6965e94c58e472",
+    apiKey: "",
+    authDomain: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
 };
 
 // Initialize Firebase
